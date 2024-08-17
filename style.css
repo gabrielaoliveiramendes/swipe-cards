@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: "Poppins";
+    font-size: 16px;
+    overflow-y: hidden;
+    max-height: 100vh;
+    min-width: 100vw;
+}
+
+.carrossel {
+    position: fixed;
+    /*some a opção de scroll*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /*textos aparecem em cima da imagem*/
+}
+
+.informacoes {
+    display: none;
+    /*esconde os textos*/
+}
+
+.informacoes.ativa {
+    display: block;
+    /*vai mostrar só o que tiver a classe ativa*/
+}
+
+.title{
+    height: 8em;
+    margin-bottom: 1em;
+}
+
+.informacoes .descricao {
+    width: 49%;
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 2em;
+    overflow: auto;
+}
+
+.conteudo{
+    margin-top: 4em;
+    margin-left: 4em;
+}
+
+.botoes-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+    margin-top: 100px;
+}
+
+.botoes-carrossel .botao {
+    background-color: #ffffff;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.botoes-carrossel .botao.selecionado {
+    background-color: transparent;
+}
+
+.imagem {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /*para a imagem nao ficar distorcida quando for preencher toda a tela*/
+    display: none;
+    /*some todas as imagens...*/
+}
+
+.imagem.ativa {
+    display: block;
+    /*... e só aparece as que estiverem .ativas*/
+    animation: mudarImagem 0.7s; /*..depois de criar a animação, aplicar e a duração ser de 0.7s*/
+}
+
+@keyframes mudarImagem { /*criando a animação mudarImagem e...*/
+    from {
+        opacity: 0.85;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+main::after{ /*criando o filtro que vai por cima de tudo e ocupa toda a tela*/
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1; /*passa o filtro para de baixo do texto para o texto nao ficar escuro*/
+}
