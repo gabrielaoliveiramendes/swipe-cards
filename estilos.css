@@ -8,11 +8,11 @@ body {
 }
 
 .carrossel {
-	position: fixed;
+	position: fixed;  /*some a opção de scroll*/
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: -1;
+	z-index: -1; /*textos aparecem em cima da imagem*/
 }
 
 .informacoes {
@@ -28,13 +28,6 @@ body {
 	flex-direction: column;
 	justify-content: space-evenly;
 	min-height: 100vh;
-}
-
-.informacoes h1 {
-	font-size: 35px;
-	color: #ffffff;
-	margin-bottom: 80px;
-	letter-spacing: 8px;
 }
 
 .informacoes .descricao {
@@ -71,7 +64,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover; /*para a imagem nao ficar distorcida quando for preencher toda a tela*/
-	display: none; /*some todas as imagens...*/
+	display: none; /*Some todas as imagens...*/
 }
 
 .imagem.ativa {
@@ -79,7 +72,7 @@ body {
 	animation: mudarImagem 0.7s; /*..depois de criar a animação, aplicar e a duração ser de 0.7s*/
 }
 
-@keyframes mudarImagem { /*criando a animação mudarImagem e...*/
+@keyframes mudarImagem { /*Criando a animação mudarImagem e...*/
 	from {
 		opacity: 0.85;
 	}
@@ -88,7 +81,7 @@ body {
 	}
 }
 
-main:after {
+main:after { /*filtro que vai por cima de tudo e ocupa toda a tela*/
 	content: "";
 	min-height: 100vh;
 	width: 100vw;
@@ -96,7 +89,7 @@ main:after {
 	top: 0;
 	left: 0;
     background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
-    z-index: -1;
+    z-index: -1;  /*passa o filtro para de baixo do texto*/
 }
 
 .title{
