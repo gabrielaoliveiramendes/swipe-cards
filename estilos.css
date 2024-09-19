@@ -36,7 +36,7 @@ body {
 	color: #ffffff;
 	line-height: 40px;
 	height: 300px;
-	overflow: auto;
+	overflow: visible;
 	padding-right: 15px;
 }
 
@@ -95,3 +95,15 @@ main:after { /*filtro que vai por cima de tudo e ocupa toda a tela*/
 .title{
 	height: 150px;
 }
+
+/* .descricao::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: transparent;
+}
+
+.descricao::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #ffffffa8;
+} */
