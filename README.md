@@ -16,7 +16,7 @@ Este projeto é um site dinâmico que apresenta uma galeria de imagens com infor
 Ao desenvolver este projeto, tive a oportunidade de aprofundar meus conhecimentos em diversas áreas:
   ### CSS:
   - Animações e @keyframes: Criação de animações utilizando @keyframes, transições suaves e efeitos visuais.
-  ###JavaScript:
+  ### JavaScript:
   - Eventos: Utilização do addEventListener para adicionar ouvintes de eventos aos elementos, permitindo que a aplicação responda a ações do usuário, como cliques nos botões.
   - Classes CSS: Adicionar e remover classes CSS dos elementos para controlar a aparência e o comportamento dos elementos na página com ".classList.remove" e ".classList.add".
   - Funções: Organização do código em funções para melhorar a modularidade e a reutilização.
