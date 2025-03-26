@@ -1,5 +1,5 @@
 # Introdução
-Este projeto é um site dinâmico que apresenta uma galeria de imagens com informações ocultas, reveladas por meio de interação do usuário ao clicar nos botôes.
+Este projeto é um site dinâmico que apresenta uma galeria de imagens com informações ocultas, reveladas por meio de interação do usuário ao clicar nos botões.
 
 ## Funcionalidades
 - Carrossel de Imagens: Exibe um carrossel de imagens de fundo que muda por meio de botões de seleção.
